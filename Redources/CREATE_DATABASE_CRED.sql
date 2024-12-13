@@ -1,7 +1,3 @@
-CREATE EXTERNAL FILE FORMAT FORMAT_PARQUET
-WITH (
-    FORMAT_TYPE=PARQUET,
-    DATA_COMPRESSION='org.apache.hadoop.io.compress.SnappyCodec'
-
-
-)
+CREATE DATABASE SCOPED CREDENTIAL Rahul_cred
+WITH
+    IDENTITY ='Managed Identity'
